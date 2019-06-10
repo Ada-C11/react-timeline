@@ -17,7 +17,7 @@ const Timeline = (props) => {
   });
 
   return (
-    <section>
+    <section className="timeline">
         <ul>
             {timelineComponents}
         </ul>
