@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
 
-// import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
+import Timeline from './components/Timeline';
+// import TimelineEvent from './components/TimelineEvent';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
-          <TimelineEvent />
+          <Timeline />
         </main>
       </div>
     );
