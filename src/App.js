@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-import Timestamp from './components/Timestamp';
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
 
 class App extends Component {
   render() {
@@ -19,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Sav's Super Awesome Timeline</h1>
+          <h1 className="App-title">Super Awesome Timeline</h1>
         </header>
         <main className="App-main">
           <Timeline events={timelineObjects} />
