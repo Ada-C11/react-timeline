@@ -6,7 +6,9 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
 
   return(
-    <TimelineEvent status={props.event.status} person={props.event.person} timeStamp={props.event.timeStamp}/>
+    <div className='timeline'>
+      <TimelineEvent status={props.event.status} person={props.event.person} timeStamp={props.event.timeStamp}/>
+    </div>
   );
 }
 

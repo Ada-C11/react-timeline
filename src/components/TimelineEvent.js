@@ -4,13 +4,13 @@ import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
 
-  const time = <Timestamp time={ new Date } />
+  const time = <Timestamp time={ props.timeStamp} />
 
   return(
-    <section>
-      <h1>{props.person}</h1>
-      <h3>{props.status}</h3>
-      <h6>{time}</h6>
+    <section className='timeline-event'>
+      <p className='event-person'>{props.person}</p>
+      <p className='event-status'>{props.status}</p>
+      <p className='event-time'>{time}</p>
     </section>
   );
 };
