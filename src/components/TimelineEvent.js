@@ -6,13 +6,13 @@ const TimelineEvent = (props) => {
   return (
     <section>
       <h3>
-        Andrew
+        {props.person}
       </h3>
       <p>
-        I'm cool
+        {props.status}
       </p>
       <h5>
-        Now o'clock
+        <Timestamp />
       </h5>
     </section>
   );
