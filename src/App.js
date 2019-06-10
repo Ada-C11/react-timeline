@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">{ timelineData["person"]}'s Social Media Feed</h1>
         </header>
         <main className="App-main">
           <Timeline />
