@@ -13,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Code Monkey</h1>
         </header>
         <main className="App-main">
-          <Timeline />
+          <Timeline events={timelineData.events} />
         </main>
       </div>
     );
