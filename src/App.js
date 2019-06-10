@@ -18,10 +18,10 @@ class App extends Component {
         </header>
         <main className="App-main">
           <section>
-            <TimelineEvent name="Kiko" status="I'm hungry" timestamp={Timestamp("2018-05-18T22:12:03Z")} />
+            <TimelineEvent person="Kiko" status="I'm hungry" time='2019-05-18T22:12:03Z' />
           </section>
           <section>
-            <TimelineEvent name="Pepper" status="I'm hungry too" timestamp={Timestamp("2018-05-18T22:19:40Z")} />
+            <TimelineEvent person="Pepper" status="I'm hungry too" time='2019-05-18T22:19:40Z' />
           </section>
         </main>
       </div>
