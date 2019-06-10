@@ -1,25 +1,21 @@
 import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
+import Timeline from './Timeline';
+
 
 const TimelineEvent = (props) => {
-  let time = <Timestamp time={new Date} />
+  // let time = <Timestamp time= {Date.now()} />
 
   return(
+    
     <section>
-      <h3>
-        <strong>
-          {props.person}
-        </strong>
-      </h3>
-      <h3>
-        <strong>
-          {time}
-        </strong>
-      </h3>
-      <h3>
-        {props.status}
-      </h3>
+      <li>
+        <p className="event-style">{props.person}</p>
+        <p className="event-style">{props.status}</p>
+        <p className="event-style">{props.timeStamp}</p>
+
+      </li>
     </section>
   );
 }

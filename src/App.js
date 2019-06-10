@@ -9,7 +9,6 @@ import Timestamp from './components/Timestamp';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
 
     // Customize the code below
     return (
@@ -18,8 +17,10 @@ class App extends Component {
           <h1 className="App-title">Ada Lovelace's Social Media Feed</h1>
         </header>
         <main className="App-main">
-          <TimelineEvent person="Adele Goldberg" status="In Smalltalk, everything happens somewhere else" timestamp={Timestamp}/>
-          
+          <ul>
+
+            <Timeline eventProps={timelineData.events}/>
+          </ul>
         </main>
       </div>
     );
