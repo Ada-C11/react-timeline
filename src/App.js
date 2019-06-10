@@ -3,6 +3,8 @@ import './App.css';
 import timelineData from './data/timeline.json';
 
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
+import Timestamp from './components/Timestamp';
 
 class App extends Component {
   render() {
@@ -12,9 +14,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">Ada Lovelace's social media feed</h1>
         </header>
         <main className="App-main">
+          <section>
+            <TimelineEvent name="Kiko" status="I'm hungry" timestamp={Timestamp("2018-05-18T22:12:03Z")} />
+          </section>
+          <section>
+            <TimelineEvent name="Pepper" status="I'm hungry too" timestamp={Timestamp("2018-05-18T22:19:40Z")} />
+          </section>
         </main>
       </div>
     );
