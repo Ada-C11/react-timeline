@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
-
+import Timestamp from './components/Timestamp';
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
 
 class App extends Component {
   render() {
-    console.log(timelineData);
+    const timelineObjects = timelineData.events.map((timelineObject, i) => {
+      return {
+        time: timelineObject.timeStamp,
+        person: timelineObject.person,
+        status: timelineObject.status,
+      };
+    });
 
     // Customize the code below
     return (
@@ -14,7 +21,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Sav's Super Awesome Timeline</h1>
         </header>
-        <main className="App-main" />
+        <main className="App-main">
+          <Timeline events={timelineObjects} />
+        </main>
       </div>
     );
   }
