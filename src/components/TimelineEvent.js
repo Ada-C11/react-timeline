@@ -5,9 +5,9 @@ import Timestamp from './Timestamp';
 const TimelineEvent = () => {
   return (
     <section>
-      <p>Laneia</p>
+      <p>{person}</p>
       <Timestamp />
-      <p>Mushroom hunting</p>
+      <p>{status}</p>
     </section>
   );
 }

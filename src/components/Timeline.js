@@ -4,8 +4,11 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
   return (
-    	      <TimelineEvent />
-    );
+    <TimelineEvent	      
+      person="laneia"
+      status="mushroom hunting"
+    />
+  );
 }
 
 export default Timeline;
