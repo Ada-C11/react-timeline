@@ -12,7 +12,9 @@ const TimelineEvent = () => {
     return (	    
       <section className="timeline">	      
         <p className="event-person">{person}</p>
-        <p className="event-time">{timeStamp}</p>
+        <Timestamp
+          time={timeStamp.time}
+        />
         <p className="event-status">{status}</p>
       </section> 
     );
