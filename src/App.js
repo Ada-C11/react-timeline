@@ -9,9 +9,6 @@ class App extends Component {
  
 
   render() {
-    console.log(timelineData);
-
-    // Customize the code below
     return (
       <div className="App">
         <header className="App-header">
