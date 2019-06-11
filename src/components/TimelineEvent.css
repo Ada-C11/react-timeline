@@ -2,9 +2,9 @@
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 1rem;
-  border-bottom: 1px solid #E6ECF0;
+  border-bottom: 5px solid rgba(249, 177, 89, 0.913);
   background-color: #FFF;
-
+  min-height: 200px;
   
 }
 
@@ -19,6 +19,7 @@
 }
 
 .event-status {
+  margin-top: 60px;
   grid-area: 2 / 1 / span 1 / -1;
 }
 
@@ -29,7 +30,9 @@
 }
 
 .status-interactions {
-  grid-area: 3 / 1 / span 2 / span 2;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+  grid-area: 3 / 1 / span 1 / span 2;
   display: inline;
   text-align: right;
 
@@ -37,4 +40,21 @@
 
 .status-interactions a {
   padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: tomato;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  margin: auto 10px auto auto;
+  float: left;
 }

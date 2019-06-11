@@ -1,7 +1,10 @@
-.App-header {
+.App-header, footer {
   background-color: rgb(57, 56, 56);
+  color:white
+}
+
+.App-header {
   padding-bottom: 0.5rem;
-  color: white;
   height: 100px;
   display: inline-block;
   /* position: fixed; */

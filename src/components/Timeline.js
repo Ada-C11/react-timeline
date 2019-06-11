@@ -12,7 +12,8 @@ const Timeline = (props) => {
         <TimelineEvent 
           person={timelineEvent.person} 
           timestamp={timelineEvent.timeStamp} 
-          status={timelineEvent.status} />
+          status={timelineEvent.status} 
+          photo={timelineEvent.photo} />
       </div>
     );
   });
