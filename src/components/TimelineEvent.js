@@ -5,7 +5,7 @@ import Timeline from './Timeline';
 
 
 const TimelineEvent = (props) => {
-  // let time = <Timestamp time= {Date.now()} />
+  let time = <Timestamp time= {props.timeStamp} />
 
   return(
     
@@ -13,7 +13,7 @@ const TimelineEvent = (props) => {
       <li>
         <p className="event-style">{props.person}</p>
         <p className="event-style">{props.status}</p>
-        <p className="event-style">{props.timeStamp}</p>
+        <p className="event-style">{time}</p>
 
       </li>
     </section>

@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+
 .App-title {
   text-align: center;
   font-size: 1.5em;
@@ -18,7 +19,8 @@
 
 ul{
   list-style: none;
-  
+  width: 50.5%;
+  padding-left: 18em;
 }
 
 li{
