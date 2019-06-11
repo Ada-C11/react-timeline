@@ -3,8 +3,6 @@ import './App.css';
 import timelineData from './data/timeline.json';
 
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
-
 class App extends Component {
   render() {
     console.log(timelineData);
@@ -15,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Ada Lovelace's Feed</h1>
         </header>
         <main className="App-main">
-          <TimelineEvent person="Mina" status="angry" timestamp="2018-05-18T22:12:03Z"/>
+          <Timeline events= {timelineData["events"]} />
         </main>
       </div>
     );

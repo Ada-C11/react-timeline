@@ -2,17 +2,20 @@ import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
-const Timeline = () => {
-  // const timelinePosts = events.map( (post, i) => {
-    // return (
-    //   <li key={i}>
-    //     <Timeline
-    //       person={ post.person }
-    //       status={ post.status }
-    //       timeStamp={ post.Timestamp } />
-    //   </li>
-  //   );
-  // });
+const Timeline = (props) => {
+  const posts = props.events.map((event, i) => {
+    return (
+      <section>
+        <TimelineEvent person={ event.person } status={ event.status } timestamp={ event.timeStamp } key={ i } />
+      </section>
+    );
+  });
+
+  return (
+    <section>
+      { posts }
+    </section>
+  );
 };
 
 export default Timeline;
