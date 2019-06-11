@@ -12,6 +12,11 @@ const TimelineEvent = (props) => {
         <Timestamp time={props.timestamp} />
       </p>
       <p className='event-status' > {props.status} </p>
+      <div className="status-interactions">
+        <a href="#">Like</a>
+        <a href='#'>Comment</a>
+        <a href="#">Share</a>
+      </div>
     </section>
   );
 };
