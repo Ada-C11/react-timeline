@@ -13,7 +13,7 @@ const TimelineEvent = () => {
       <section className="timeline">	      
         <p className="event-person">{person}</p>
         <Timestamp
-          time={timeStamp.time}
+          time={timeStamp}
         />
         <p className="event-status">{status}</p>
       </section> 
