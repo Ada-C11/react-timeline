@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+
 .App-title {
   text-align: center;
   font-size: 1.5em;
@@ -15,3 +16,14 @@
   padding-top: 7rem;
   background-color: #E6ECF0;
 }
+
+ul{
+  list-style: none;
+  width: 50.5%;
+  padding-left: 18em;
+}
+
+li{
+  padding: 10;
+  background: white;
+} 
