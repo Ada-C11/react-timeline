@@ -9,7 +9,6 @@ const TimelineEvent = (props) => {
     <p class="event-person">{props.person}</p>
     <p class="event-status">{props.status}</p>
     <p class="event-time"><Timestamp time={props.time} /></p>
-    {/* timelineData.timeStamp */}
   </article>
   );
 }

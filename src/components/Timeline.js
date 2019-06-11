@@ -5,6 +5,7 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   // props is an array of "events" which are JS objects from timeline.json 
   const timelineComponents = props.events.map((event, i) => {
+    // why do we need .events again ^ here? 
     return (
       <TimelineEvent 
       key = {i}
