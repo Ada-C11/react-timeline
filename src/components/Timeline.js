@@ -11,7 +11,7 @@ const Timeline = (props) => {
       <div key={i} >
         <TimelineEvent 
           person={timelineEvent.person} 
-          timestamp={timelineEvent.timestamp} 
+          timestamp={timelineEvent.timeStamp} 
           status={timelineEvent.status} />
       </div>
     );
