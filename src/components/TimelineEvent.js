@@ -7,15 +7,15 @@ const TimelineEvent = (props) => {
   // const time = props.time
   return(
     <section className="timeline-event">
-      <p className="event-person">
+      <div className="event-person">
         {props.person}
-      </p>
-      <p className="event-status">
+      </div>
+      <div className="event-status">
         {props.status}
-      </p>
-      <p className="event-timestamp">
+      </div>
+      <div className="event-timestamp">
         <Timestamp time={props.time} />
-      </p>
+      </div>
     </section>
   );
 }
