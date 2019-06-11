@@ -3,13 +3,19 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 const TimelineEvent = () => {
-  return (
-    <section>
-      <p>{person}</p>
-      <Timestamp />
-      <p>{status}</p>
-    </section>
-  );
-}
+  render() {
+    const person = this.props.person;
+    const timeStamp = this.props.timeStamp;
+    const status = this.props.status;
+
+
+    return (	    
+      <section>	      
+        <p>{person}</p>
+        <p>{timeStamp}</p>
+        <p>{status}</p>
+      </section> 
+    );
+}}
 
 export default TimelineEvent;
