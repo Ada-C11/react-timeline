@@ -10,10 +10,10 @@ const TimelineEvent = () => {
 
 
     return (	    
-      <section>	      
-        <p>{person}</p>
-        <p>{timeStamp}</p>
-        <p>{status}</p>
+      <section className="timeline">	      
+        <p className="event-person">{person}</p>
+        <p className="event-time">{timeStamp}</p>
+        <p className="event-status">{status}</p>
       </section> 
     );
 }}

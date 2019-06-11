@@ -19,7 +19,7 @@ const Timeline = () => {
     });
 
   return (
-    <div>{timelineEventComponents}</div>
+    <div className="timeline">{timelineEventComponents}</div>
   );
 }}
 
