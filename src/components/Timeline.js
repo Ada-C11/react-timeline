@@ -5,14 +5,17 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   const posts = props.events.map((event, i) => {
     return (
-      <section>
-        <TimelineEvent person={ event.person } status={ event.status } timestamp={ event.timeStamp } key={ i } />
+      <section key={ i }>
+        <TimelineEvent 
+          person={ event.person } 
+          status={ event.status } 
+          timestamp={ event.timeStamp } />
       </section>
     );
   });
 
   return (
-    <section>
+    <section className="post">
       { posts }
     </section>
   );
