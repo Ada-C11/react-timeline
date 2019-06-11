@@ -6,6 +6,7 @@ const TimelineEvent = () => {
   return (
     <section>
       <p>Laneia</p>
+      <Timestamp />
       <p>Mushroom hunting</p>
     </section>
   );
