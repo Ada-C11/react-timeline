@@ -1,5 +1,7 @@
 .timeline {
-  width: 30%;
+  width: 800px;
   margin: auto;
   text-align: left;
+  word-wrap: break-word;
+  padding-bottom: 50px;
 }

@@ -1,17 +1,39 @@
+.App-header, footer {
+  background-color: rgb(57, 56, 56);
+  color:white
+}
+
 .App-header {
-  background-color: #222;
   padding-bottom: 0.5rem;
-  color: white;
-  position: fixed;
+  height: 100px;
+  display: inline-block;
+  /* position: fixed; */
   width: 100%;
 }
 
 .App-title {
   text-align: center;
   font-size: 1.5em;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .App-main {
   padding-top: 7rem;
-  background-color: #E6ECF0;
+  background-color: rgba(249, 177, 89, 0.913);
+}
+
+img {
+  max-width: 150px;
+  border: white solid 3px;
+  border-radius: 50%;
+  margin: 20px 0px 0px 100px;
+  float: left;
+  
+  
+}
+
+footer {
+  padding: 10px;
 }
