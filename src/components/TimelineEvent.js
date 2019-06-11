@@ -12,7 +12,7 @@ const TimelineEvent = (props) => {
         {props.status}
       </p>
       <h5>
-        <Timestamp time={props.timeStamp}/>
+        <Timestamp time={props.timestamp}/>
       </h5>
     </section>
   );
