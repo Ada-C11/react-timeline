@@ -8,10 +8,12 @@ const TimelineEvent = (props) => {
     <section>
 
     {/* <h3>{ props.timestamp } </h3> */}
-      <h3> <Timestamp time= { props.time }/></h3>
+
+    <h4 className="time"> <Timestamp time= { props.time }/></h4>
+      <h3 className="name">{ props.person }</h3>
       {/* so, note to self, it has to match the name time on Timestamp */}
     <h3>
-      { props.person } , { props.status}
+      { props.status}
     </h3>
   </section>
   );

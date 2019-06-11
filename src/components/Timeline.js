@@ -1,7 +1,6 @@
 import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
-// import timelineData from './data/timeline.json';
 
 const Timeline = (props) => {
   // although why do we have to do props.events? cause itsnt 
@@ -10,7 +9,7 @@ const Timeline = (props) => {
 
   const timelineComponents = props.events.map( (timeline, i) => {
     return (
-      <li key={i}>
+      <li className="timeline" key={i}>
         <TimelineEvent
           person={ timeline.person }
           status={ timeline.status }
@@ -20,7 +19,7 @@ const Timeline = (props) => {
   });
   
     return (
-      <section>
+      <section >
         <ul>
           { timelineComponents }
         </ul>
