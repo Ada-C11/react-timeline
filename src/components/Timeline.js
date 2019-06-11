@@ -3,8 +3,9 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
-  // Fill in your code here
-  return;
+  return (
+    	      <TimelineEvent />
+    );
 }
 
 export default Timeline;

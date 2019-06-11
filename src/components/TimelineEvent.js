@@ -3,8 +3,12 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 const TimelineEvent = () => {
-  // Fill in your code here
-  return;
+  return (
+    <section>
+      <p>Laneia</p>
+      <p>Mushroom hunting</p>
+    </section>
+  );
 }
 
 export default TimelineEvent;
