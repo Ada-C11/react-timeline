@@ -5,28 +5,20 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
 
-  const data = [
-    {
-      person: "Ariana Bray",
-      status: "I don't like this",
-      timeStamp: "2019-10-10"
-    }
-  ]
-
-  const fakeTimelineEvent = data.map( (timeline, i) => {
-      return (
-        <li key={i}>
-          <TimelineEvent person={timeline.person}
-            status={timeline.status}
-            timestamp={timeline.timestamp} />
-        </li>
-      );
+  const timelineComponents = props.events.map((timeline, i) => {
+    return (
+      <TimelineEvent
+        key={i}
+        person={timeline.person}
+        status={timeline.status}
+        timestamp={timeline.timeStamp}
+        />
+    )
   });
-  // Fill in your code here
   return (
     <section>
       <ul>
-        {fakeTimelineEvent}
+        {timelineComponents}
       </ul>
     </section>
   )
