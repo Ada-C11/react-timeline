@@ -5,6 +5,7 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 class App extends Component {
+
   render() {
     console.log(timelineData);
 
@@ -15,6 +16,7 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
+          <Timeline events={timelineData.events} />
         </main>
       </div>
     );
