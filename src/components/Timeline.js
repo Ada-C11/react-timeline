@@ -12,6 +12,7 @@ const Timeline = (props) => {
       person={event.person} 
       status={event.status} 
       time={event.timeStamp} />
+      // why does the capital S in timeStamp not need to be in caps to work?
     );
   });
   return(
