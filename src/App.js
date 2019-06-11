@@ -14,7 +14,7 @@ class App extends Component {
           <h1 className="App-title">Welcome, {timelineData.person}</h1>
         </header>
         <main className="App-main">
-          <Timeline events={timelineData.events} />
+          <Timeline items={timelineData.events} />
         </main>
       </div>
     );
