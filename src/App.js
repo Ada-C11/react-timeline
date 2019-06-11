@@ -10,7 +10,6 @@ class App extends Component {
       return (
         <li key={i}>
           <Timeline event={ post } />
-
         </li>
       )
     });
