@@ -5,13 +5,13 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
 
-    const varHoldsData = props.map((user, index) => {
+    const timeLineEventsData = props.events.map((user, index) => {
       return (<TimelineEvent key= {index} name={user.person} status={user.status} timeStamp={user.timeStamp}/>)
     });
 
   return (
     <section className="timeline">
-        {varHoldsData}
+        {timeLineEventsData}
     </section>
   )
 }

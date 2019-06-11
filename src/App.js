@@ -9,8 +9,8 @@ class App extends Component {
 
   render() {
 
-    const dataArray = timelineData.events
-    const varHoldsTimeEvents = Timeline(dataArray); 
+    const timeLineDataArray = timelineData.events
+    
 
     return (
       <div className="App">
@@ -18,7 +18,8 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
-          {varHoldsTimeEvents}
+        
+          <Timeline events={timeLineDataArray}/>
         </main>
       </div>
     );
