@@ -25,11 +25,6 @@
       "person": "Stephanie Hurlburt",
       "status": "I don’t think you can do good work if you’re not at least occasionally talking to a person you’re building for.",
       "timeStamp": "2018-05-18T23:09:38Z"
-    },
-    {
-      "person": "Yan Zhu",
-      "status": "//for a good time, paste this into twitter page console: c=new AudioContext;n=setInterval(\"for(n+=7,i=k,P='\u25b2.\\\n';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;doc.innerHTML=P;with(c.createOscillator())frequency.value=200*(j+n/k^j),connect(c.destination),start(),stop(n/k)\",k=64)",
-      "timeStamp": "2018-05-18T23:51:01Z"
     }
   ]
 }
