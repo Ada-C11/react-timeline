@@ -7,14 +7,13 @@ import Timeline from './components/Timeline';
 class App extends Component {
   render() {
     console.log(timelineData);
-
-    // Customize the code below
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Application title</h1>
+          <h1 className="App-title">Code Monkey</h1>
         </header>
         <main className="App-main">
+          <Timeline events={timelineData.events} />
         </main>
       </div>
     );
